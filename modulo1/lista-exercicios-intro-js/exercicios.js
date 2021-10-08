@@ -18,14 +18,14 @@ function imprimeMensagem() {
 
 // EXERCÍCIO 01
 function calculaAreaRetangulo() {
-  // implemente sua lógica aqui
+  // implemente sua lógica aqui // foi dificil 
   const alturaRetangulo =prompt("Qual a altura do retângulo?")
   const larguraRetangulo =prompt("Qual a largura do retângulo?")
   
   calculaAreaRetangulo (alturaRetangulo * larguraRetangulo)
   console.log (calculaAreaRetangulo)
  }
-
+ 
 calculaAreaRetangulo(3,5)
 
 // EXERCÍCIO 02
