@@ -15,12 +15,13 @@ function retornaArrayInvertido(array) {
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  
+  return array.ordenado()
 }
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+  const arrayPar = []
+  for()
 }
 
 // EXERCÍCIO 05
