@@ -20,18 +20,35 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  const arrayPar = []
-  for()
+   let novoArray = []
+   for(let i = 0; i < array.length; i++){
+   if(array[i] % 2 === 0){
+   novoArray.push(array[i])
+   }
+}
+     return novoArray
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+  let novoArray = []
+  for(let i = 0; i < array.length; i++){
+    if(array[i] % 2 === 0){
+      novoArray.push(array[i] * array[i])
+    }
+  }
+  return novoArray
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+    let maiorNumero = array[0]
+    for (let i = 0; i< array.length; i++){
+      if(maiorNumero < array[i]){
+        maiorNumero = array[i]
+      }
+    }
+    return maiorNumero
 }
 
 // EXERCÍCIO 07
