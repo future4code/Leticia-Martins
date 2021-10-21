@@ -101,6 +101,15 @@
 // // LOOP+CONDICIONAL
 
 // // Exercício 6 -------------------------------------------------------------------------------------
+// Escreva uma função para validar a segunda dose de um usuário, que receba o nomeDoUsuário 
+// e mude o valor da propriedade imunização para “completa” para isso vamos te fornecer uma lista de usuários.
+// Dica:  para acessar os valores guardados em cada propriedade de um objeto use a notação do ponto chamando
+//  pelo nome da propriedade.
+//  **Ex:**  
+
+// - objeto.nome // "Bárbara"
+// - objeto.vacina // "astrazenica"
+
 
 // const segundaDose = (nomeDoUsuario) => {
 //     const usuarios = [
@@ -108,12 +117,25 @@
 //         { nome: "Barbara", imunizacao: "incompleta" },
 //         { nome: "Carlos", imunizacao: "incompleta" }
 //     ]
+  
+    
+//   }
+ 
+//     const validaSegundaDose = usuarios.filter((pessoa)=> {
 
-//     //  Sua lógica aqui
+//         if(pessoa.imunizacao === "incompleto"){
+//             return true
+//         }
+//     })
 
+//     validaSegundaDose.map((pessoa) =>{
+//             console.log (`Olá ${pessoa.nome}!Sua imunização está ${pessoa.imunizacao} `)
+//     })
 
-// }
 // console.log(segundaDose("Barbara"));
+
+
+// console.log(validaSegundaDose)
 
 // // Exercício 7 --------------------------------------------------------------------------------------
 
