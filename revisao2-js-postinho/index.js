@@ -91,24 +91,34 @@
 
 // const primeiraDose = () => {
 
-//     //  Sua lógica aqui
+//     const nomeDoUsuario = prompt("Digite seu nome:")
+//     const vacinaPrimeiraDose = prompt("Digite o nome da vacina que tomou:")
+//     const dataVacina = Number(prompt("Digite a data que você tomou a primeira dose da vacina:")
+//     const dataAtual = Number(prompt("Digite a data de hoje:")
+    
+//     let data = new Date()
+//     console.log(data.getDate())
+//     data.setDate(data.getDate() + 90)
+//     console.log(data.getDate())
+
+    
 
 
-// }
-// console.log(primeiraDose())
+// // }
+// // console.log(primeiraDose())
 
 
-// // LOOP+CONDICIONAL
+// // // LOOP+CONDICIONAL
 
-// // Exercício 6 -------------------------------------------------------------------------------------
-// Escreva uma função para validar a segunda dose de um usuário, que receba o nomeDoUsuário 
-// e mude o valor da propriedade imunização para “completa” para isso vamos te fornecer uma lista de usuários.
-// Dica:  para acessar os valores guardados em cada propriedade de um objeto use a notação do ponto chamando
-//  pelo nome da propriedade.
-//  **Ex:**  
+// // // Exercício 6 -------------------------------------------------------------------------------------
+// // Escreva uma função para validar a segunda dose de um usuário, que receba o nomeDoUsuário 
+// // e mude o valor da propriedade imunização para “completa” para isso vamos te fornecer uma lista de usuários.
+// // Dica:  para acessar os valores guardados em cada propriedade de um objeto use a notação do ponto chamando
+// //  pelo nome da propriedade.
+// //  **Ex:**  
 
-// - objeto.nome // "Bárbara"
-// - objeto.vacina // "astrazenica"
+// // - objeto.nome // "Bárbara"
+// // - objeto.vacina // "astrazenica"
 
 
 // const segundaDose = (nomeDoUsuario) => {
@@ -135,31 +145,31 @@
 // console.log(segundaDose("Barbara"));
 
 
-// console.log(validaSegundaDose)
-
-// // Exercício 7 --------------------------------------------------------------------------------------
-
-// const avisoAosAtrasados = () => {
-//     const usuarios = [
-//         { nome: "Artur", imunizacao: "incompleta" },
-//         { nome: "Barbara", imunizacao: "completa" },
-//         { nome: "Carlos", imunizacao: "incompleta" }
-//     ]
-
-//     //  Sua lógica aqui
-
-// }
-// console.log(avisoAosAtrasados());
 
 
-// // DESAFIO------------------------------------------------------------------------------------------
+// // // Exercício 7 --------------------------------------------------------------------------------------
 
-// const usuarios = [
-//     {
-//         nome: "Artur",
-//         ano: 2000,
-//         nacionalidae: "brasileiro",
-//         senha: "123456",
+// // const avisoAosAtrasados = () => {
+// //     const usuarios = [
+// //         { nome: "Artur", imunizacao: "incompleta" },
+// //         { nome: "Barbara", imunizacao: "completa" },
+// //         { nome: "Carlos", imunizacao: "incompleta" }
+// //     ]
+
+// //     //  Sua lógica aqui
+
+// // }
+// // console.log(avisoAosAtrasados());
+
+
+// // // DESAFIO------------------------------------------------------------------------------------------
+
+// // const usuarios = [
+// //     {
+// //         nome: "Artur",
+// //         ano: 2000,
+// //         nacionalidae: "brasileiro",
+// //         senha: "123456",
 //         vacina: "pfizer",
 //         imunizacao: "incompleta"
 //     },
