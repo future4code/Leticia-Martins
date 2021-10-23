@@ -50,24 +50,79 @@
 // Exercício 3------------------------------------------------------------------------------------
 
 // const cadastro = () => {
-//     const usuario = []
-
-//         const nomeDoUsuario = prompt("Digite o seu nome?")
+    
+        
+//         const nome = prompt("Digite o seu nome?")
 //         const anoDeNascimento = Number(prompt("Digite seu ano de nascimento?"))
-//         const senhaDoUsuario = prompt("Digite a sua senha, ela deve ter mais de seis digitos")
-//         const nacionalidadeUsuario = prompt("Digite a sua nacionalidade?")
+//         const senha = prompt("Digite a sua senha, ela deve ter mais de seis digitos")
+//         const nacionalidade = prompt("Digite a sua nacionalidade?")
+                
+//         const usuarios = []
+
+//         const usuario = {
+//             nome: nome,
+//             anoDeNascimento: anoDeNascimento,
+//             senha: senha,
+//             nacionalidade: nacionalidade
+
+//         }
+
 //         const idadeAtual = 2021 - anoDeNascimento
-//         // if(idadeAtual>=18 ===        === "brasileira")
-//         if(idadeAtual >= 18 && senhaDoUsuario.length >=6 && nacionalidadeUsuario === "brasileira" ){
+
+//         if(idadeAtual >= 18 && senha.length >=6 && nacionalidade === "brasileira" ){
            
-//             console.log (`Olá ${nomeDoUsuario}, usuário cadastrado com sucesso`)
+//             console.log (`Olá ${nome}, usuário cadastrado com sucesso`)
 
 //         }else{
 //             console.log("Não foi possivel cadastrar o usuário")
 //         }
 
+//         usuarios.push(usuario)
+//         return usuarios
+        
 // }
 // console.log(cadastro());
+
+//forma inversa Yuzo
+
+// const cadastro = () => {
+
+//         const nome = prompt("Digite o seu nome?")
+//         const anoDeNascimento = Number(prompt("Digite seu ano de nascimento?"))
+//         const senha = prompt("Digite a sua senha, ela deve ter mais de seis digitos")
+//         const nacionalidade = prompt("Digite a sua nacionalidade?")
+                
+//         const usuarios = []
+
+//         const usuario = {
+//             nome: nome,
+//             anoDeNascimento: anoDeNascimento,
+//             senha: senha,
+//             nacionalidade: nacionalidade
+
+//         }
+
+//         const idadeAtual = 2021 - usuario.anoDeNascimento
+
+//         if(idadeAtual <=18){
+//             return `Usuário precisa ser maior que 18 anos.`
+
+//         }
+
+//         if(senha.length < 6) {
+//             return `Senha precisa ter no minimo 6 caracteres`
+//         }
+
+//         if(usuario.nacionalidade !== 'br'){
+//             return `Usuário precisa ter nacionalidade "br"`
+//         }
+
+//             usuarios.push(usuario)
+//             return usuarios
+//     }   
+//             console.log(cadastro());
+
+
 
 // Exercício 4-----------------------------------------------------------------------------------------------
 
@@ -93,19 +148,37 @@
 
 //     const nomeDoUsuario = prompt("Digite seu nome:")
 //     const vacinaPrimeiraDose = prompt("Digite o nome da vacina que tomou:")
-//     const dataVacina = Number(prompt("Digite a data que você tomou a primeira dose da vacina:")
-//     const dataAtual = Number(prompt("Digite a data de hoje:")
     
+    
+//     let tempo = 0
 //     let data = new Date()
-//     console.log(data.getDate())
-//     data.setDate(data.getDate() + 90)
-//     console.log(data.getDate())
 
+//     switch (vacinaPrimeiraDose) {
+//         case "coronavac":
+//             tempo = 28
+//             break;
+//         case "astrazeneca":    
+//             tempo = 90
+//             break
+//         case "pfizer":
+//             tempo = 90
+//             break
+//         default:
+//             console.log("Vacina inválida")
+//             break
+//     }
+
+       
+//     data.setDate(data.getDate() + tempo)
+
+//     const dataFormatada = data.toLocaleDateString()
+
+//     return `Olá ${nomeDoUsuario}! A próxima dose da ${vacinaPrimeiraDose} é daqui a ${tempo}dias. Compareça no posto na data ${dataFormatada}`
+// }
+
+// console.log(primeiraDose())
     
-
-
-// // }
-// // console.log(primeiraDose())
+//enfim acho que entendi com a explicação 
 
 
 // // // LOOP+CONDICIONAL
