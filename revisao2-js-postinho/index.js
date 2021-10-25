@@ -184,55 +184,45 @@
 // // // LOOP+CONDICIONAL
 
 // // // Exercício 6 -------------------------------------------------------------------------------------
-// // Escreva uma função para validar a segunda dose de um usuário, que receba o nomeDoUsuário 
-// // e mude o valor da propriedade imunização para “completa” para isso vamos te fornecer uma lista de usuários.
-// // Dica:  para acessar os valores guardados em cada propriedade de um objeto use a notação do ponto chamando
-// //  pelo nome da propriedade.
-// //  **Ex:**  
-
-// // - objeto.nome // "Bárbara"
-// // - objeto.vacina // "astrazenica"
 
 
-// const segundaDose = (nomeDoUsuario) => {
+//     const segundaDose = (pessoaVacinada) => { // aqui recebeu um parametro
 //     const usuarios = [
 //         { nome: "Artur", imunizacao: "incompleta" },
 //         { nome: "Barbara", imunizacao: "incompleta" },
 //         { nome: "Carlos", imunizacao: "incompleta" }
 //     ]
-  
-    
+//   for (let usuario of usuarios){ // let criando a variavel e ela esta criando a interação 
+//     if(usuario.nome === pessoaVacinada){
+//             usuario.imunizacao = "completa"
+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
+//     }  
+
 //   }
- 
-//     const validaSegundaDose = usuarios.filter((pessoa)=> {
+//     return usuarios
+// }
 
-//         if(pessoa.imunizacao === "incompleto"){
-//             return true
-//         }
-//     })
-
-//     validaSegundaDose.map((pessoa) =>{
-//             console.log (`Olá ${pessoa.nome}!Sua imunização está ${pessoa.imunizacao} `)
-//     })
-
-// console.log(segundaDose("Barbara"));
-
-
+//   // console.log(segundaDose("Barbara"))
 
 
 // // // Exercício 7 --------------------------------------------------------------------------------------
 
-// // const avisoAosAtrasados = () => {
-// //     const usuarios = [
-// //         { nome: "Artur", imunizacao: "incompleta" },
-// //         { nome: "Barbara", imunizacao: "completa" },
-// //         { nome: "Carlos", imunizacao: "incompleta" }
-// //     ]
+// const avisoAosAtrasados = () => {
+//     const usuarios = [
+//         { nome: "Artur", imunizacao: "incompleta" },
+//         { nome: "Barbara", imunizacao: "completa" },
+//         { nome: "Carlos", imunizacao: "incompleta" }
+//     ]
 
-// //     //  Sua lógica aqui
+//    //quero só uma informação, quero andar por um array, não quero criar 
+//    for (let usuario of usuarios) {
+//       if(usuario.imunizacao === "incompleta"){
+//         console.log(`Olá ${usuario.nome}! Sua imunização está ${usuario.imunizacao}, por favor, volte ao postinho para tomar a segunda dose`)
+//       }
 
-// // }
-// // console.log(avisoAosAtrasados());
+//    }
+//   }
+// console.log(avisoAosAtrasados());
 
 
 // // // DESAFIO------------------------------------------------------------------------------------------
