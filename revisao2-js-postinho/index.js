@@ -195,7 +195,7 @@
 //   for (let usuario of usuarios){ // let criando a variavel e ela esta criando a interação 
 //     if(usuario.nome === pessoaVacinada){
 //             usuario.imunizacao = "completa"
-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
+
 //     }  
 
 //   }
