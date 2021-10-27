@@ -109,7 +109,7 @@
 
 //         }
 
-//         if(senha.length < 6) {
+//         if(usuario.senha.length < 6) {
 //             return `Senha precisa ter no minimo 6 caracteres`
 //         }
 
@@ -131,16 +131,75 @@
 
 // function login (){
 
-// const senha = prompt("Digite a sua senha cadastrada no site. Ela deve ter mais de seis digitos")
-// if(senha === "Labenu"){
+// const senhaDigitada = prompt("Digite a sua senha cadastrada no site. Ela deve ter mais de seis digitos")
+
+// const senhaRegistrada = "Labenu"
+
+// if(senhaDigitada === senhaRegistrada){
+    
 //     console.log ("Usuário logado")
+
 // }else{
 //     console.log ("Senha Inválida")
 // }
 
+//     return senhaDigitada
 // }
 
 // console.log(login());
+
+//refatorado
+
+// const login = () => {
+// const usuarios = [
+//         {
+//             nome: "Artur",
+//             ano: 2000,
+//             nacionalidae: "brasileiro",
+//             senha: "123456",
+//             vacina: "pfizer",
+//             imunizacao: "incompleta"
+//         },
+//         {
+//             nome: "Bárbara",
+//             ano: 1984,
+//             nacionalidae: "brasileira",
+//             senha: "labenu",
+//             vacina: "astrazenica",
+//             imunizacao: "completa"
+//         },
+//         {
+//             nome: "Carlos",
+//             ano: 2000,
+//             nacionalidae: "brasileiro",
+//             senha: "123456",
+//             vacina: "coronavac",
+//             imunizacao: "incompleta"
+//         }
+    
+//     ]
+
+//     const senhaDigitada = prompt(`Digite a sua senha cadastrada no site. Ela deve ter mais de seis digitos`)
+
+
+//         for (let usuario of usuarios){
+           
+//             if(senhaDigitada === usuario.senha){
+    
+//             console.log ("Usuário logado")
+                
+//         }else{
+
+//             console.log ("Senha Inválida")
+//         }
+//     }
+//             return senhaDigitada
+//         }
+//             console.log(login())
+
+
+
+
 
 // Exercício 5----------------------------------------------------------------------------------------------------
 
