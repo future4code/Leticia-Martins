@@ -49,39 +49,39 @@
 
 // Exercício 3------------------------------------------------------------------------------------
 
-// const cadastro = () => {
+const cadastro = () => {
     
         
-//         const nome = prompt("Digite o seu nome?")
-//         const anoDeNascimento = Number(prompt("Digite seu ano de nascimento?"))
-//         const senha = prompt("Digite a sua senha, ela deve ter mais de seis digitos")
-//         const nacionalidade = prompt("Digite a sua nacionalidade?")
+        const nome = prompt("Digite o seu nome?")
+        const anoDeNascimento = Number(prompt("Digite seu ano de nascimento?"))
+        const senha = prompt("Digite a sua senha, ela deve ter mais de seis digitos")
+        const nacionalidade = prompt("Digite a sua nacionalidade?")
                 
-//         const usuarios = []
+        const usuarios = []
 
-//         const usuario = {
-//             nome: nome,
-//             anoDeNascimento: anoDeNascimento,
-//             senha: senha,
-//             nacionalidade: nacionalidade
+        const usuario = {
+            nome: nome,
+            anoDeNascimento: anoDeNascimento,
+            senha: senha,
+            nacionalidade: nacionalidade
 
-//         }
+        }
 
-//         const idadeAtual = 2021 - anoDeNascimento
+        const idadeAtual = 2021 - anoDeNascimento
 
-//         if(idadeAtual >= 18 && senha.length >=6 && nacionalidade === "brasileira" ){
+        if(idadeAtual >= 18 && senha.length >=6 && nacionalidade === "brasileira" ){
            
-//             console.log (`Olá ${nome}, usuário cadastrado com sucesso`)
+            console.log (`Olá ${nome}, usuário cadastrado com sucesso`)
 
-//         }else{
-//             console.log("Não foi possivel cadastrar o usuário")
-//         }
+        }else{
+            console.log("Não foi possivel cadastrar o usuário")
+        }
 
-//         usuarios.push(usuario)
-//         return usuarios
+        usuarios.push(usuario)
+        return usuarios
         
-// }
-// console.log(cadastro());
+}
+console.log(cadastro());
 
 //forma inversa Yuzo
 
