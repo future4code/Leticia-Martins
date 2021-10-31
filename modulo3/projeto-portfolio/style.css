@@ -1,0 +1,38 @@
+@import url ('https://fonts.googleapis.com/css2? família=Amaranth&família=Festivo&família=Hind+Vadodara:wght@300;400&família=Neucha&família=Saira+Semi+Condensado:wght@100;200&display=swap');
+
+* {
+    margin:0%
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.header {
+    background-color: background-color: goldenrod;
+}
+
+.menu{
+margin: 9px 0;
+}
+
+.menu a{
+    color: #353535;
+    border: 1px solid #353535 ;
+}
+
+#selected{
+    color:wheat
+}
+
+a{
+    text-decoration: none;
+}
+#profile-picture{
+    height: 320px;
+}
+
+
+.footer {
+    background-color: goldenrod;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
