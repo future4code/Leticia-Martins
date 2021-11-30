@@ -13,9 +13,10 @@ const InputComment = styled.input `
 `
 
 const SecaoComentario = (props) => {
-
+	
 
 	const onChangeComentario = (event) => {
+		setComentarios(event.target.value)
 	}
 
 	return (

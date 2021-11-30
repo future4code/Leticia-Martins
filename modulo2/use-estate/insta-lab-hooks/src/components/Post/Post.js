@@ -11,10 +11,10 @@ import iconeComentario from '../../img/comment_icon.svg'
 
 const Post = (props) => {
 
-  const [curtido, setCurtido] = useState(false),
-  const [numeroCurtidas, setNumeroCurtidas] = useState(0),
-  const [comentando, setComentando] = useState(false),
-  const [numeroComentarios, setNumeroComentarios] = useState(0),
+  const [curtido, setCurtido] = useState(false);
+  const [numeroCurtidas,setNumeroCurtidas] = useState(0);
+  const [comentando, setComentando] = useState(false);
+  const [numeroComentarios, setNumeroComentarios] = useState(0);
   const [comentarios, setComentarios] = useState([])
 
 
@@ -22,32 +22,41 @@ const Post = (props) => {
     if(curtido) {
       setCurtido(!curtido)
       setNumeroCurtidas(numeroCurtidas -1)
-    }else {
+    } else {
       setCurtido(!curtido)
       setNumeroCurtidas(numeroCurtidas + 1)
     }
   };
 
   const onClickComentario = () => {
-      setComentando(!comentando)
-  };
-
-  function enviarComentario(comentario) {
+    setComentando(!comentando)
   }
 
-  const iconeCurtida = () => {
-    setNumeroComentarios((curtido ? (iconeCoracaoPreto) : (iconeCoracaoBranco)))
+  function enviarComentario (comentario) {
+
+    const listaDeComentarios = [...comentarios, comentario]
+    setComentarios(listaDeComentarios)
+      setComentando(false)
+      setNumeroComentarios(numeroComentarios + 1)
   }
 
-  const caixaDeComentario = () => {
-    comentando ? (
-      <SecaoComentario enviarComentario={enviarComentario}/>
-
-    ) : (
-      comentarios.map(comentario => {})
-    )
+  const iconeCurtida = curtido ? (iconeCoracaoPreto):(iconeCoracaoBranco)
+    
   }
 
+  const caixaDeComentario = comentando? (
+    <SecaoComentario enviarComentario ={enviarComentario}/>
+
+  ) : (
+     comentarios.map(comentario => {
+      return(
+        <CommentContainer>
+          <p>{comentario}</p>
+        </CommentContainer>
+      )
+     })   
+  )
+   
   return (
     <PostContainer>
       <PostHeader>
@@ -58,6 +67,7 @@ const Post = (props) => {
       <PostPhoto src={props.fotoPost} alt={'Imagem do post'}/>
 
       <PostFooter>
+        
         <IconeComContador
           // icone={iconeCurtida}
           onClickIcone={onClickCurtida}
@@ -70,9 +80,9 @@ const Post = (props) => {
           // valorContador={numeroComentarios}
         />
       </PostFooter>
-      {/* {caixaDeComentario} */}
+      {caixaDeComentario}
     </PostContainer>
   )
-}
+  }
 
 export default Post
