@@ -1,15 +1,15 @@
 import React from 'react'
-import AdminHomePage from './pages/AdminHomePage'
-import HomePage from './pages/HomePage'
-import LoginPage from './pages/LoginPage'
-import ListTripsPage from './pages/ListTripsPage'
-import ApplicationFormPage from './pages/ApplicationFormPage'
-import TripDetailsPage from './pages/TripDetailsPage'
-import CreateTripPage from './pages/CreateTripPage'
+import {AdminHomePage} from './pages/AdminHomePage'
+import {HomePage} from './pages/HomePage'
+import {LoginPage} from './pages/LoginPage'
+import {ListTripsPage} from './pages/ListTripsPage'
+import {ApplicationFormPage} from './pages/ApplicationFormPage'
+import {TripDetailsPage} from './pages/TripDetailsPage'
+import {CreateTripPage} from './pages/CreateTripPage'
 import {BrowserRouter, Switch, Route} from 'react'
 
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Switch>
@@ -52,6 +52,7 @@ export default function App() {
 
 }
 
+export default App
 
 
 

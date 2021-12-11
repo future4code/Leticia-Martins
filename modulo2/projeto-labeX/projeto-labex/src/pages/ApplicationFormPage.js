@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ApplicationFormPage () {
+export function ApplicationFormPage () {
 
 return (
     <div>

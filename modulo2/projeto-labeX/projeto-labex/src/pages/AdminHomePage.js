@@ -1,7 +1,7 @@
-import React from 'react'
+import {React} from 'react'
 import {useHistory} from 'react-router-dom'
 
-const AdminHomePage = () => {
+export function AdminHomePage() {
 
     const history = useHistory()
 
@@ -10,16 +10,15 @@ const AdminHomePage = () => {
     }
 
     const goToHome = () => {
-        history.push ("/HomePage")
+        history.push("/")
     }
-
-
-
 
     return (
         <div>
-            
+
             <p>AdminHomePage</p>
+            <button onClick={goBack}>Voltar</button>
+            <button onclick={goToHome}>Ir para HomePage</button>
 
         </div>
 
@@ -27,4 +26,3 @@ const AdminHomePage = () => {
 
 }
 
-export default AdminHomePage

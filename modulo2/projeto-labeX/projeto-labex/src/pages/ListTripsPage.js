@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ListTripsPage () {
+export function ListTripsPage () {
 
     return (
         <div>

@@ -1,7 +1,7 @@
-import React from 'react'
+import {React} from 'react'
 import {useHistory} from 'react-router-dom'
 
-export const HomePage = () => {
+export function HomePage  ()  {
         
     const history = useHistory()
 
@@ -19,3 +19,5 @@ export const HomePage = () => {
 
     )
     }
+
+    
