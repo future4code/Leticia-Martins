@@ -4,12 +4,13 @@ import logo from '../../assets/logo.png'
 import useForm from '../../hooks/useForm'
 import Textfield from '@material-ui/core/TextField'
 import { Button } from '@material-ui/core'
+import { SignUpButtonContainer } from '../LoginPage/styled-components'
 
 const LoginPage = () => {
     const [form, onChange, clear] = useForm ({email:"", password:""})
 
-    const onSubmitForm = () =>{
-
+    const onSubmitForm = (event) =>{
+            event.preventDefault()
     }
     
     
@@ -27,7 +28,9 @@ const LoginPage = () => {
                     label = {"E-mail"} 
                     variant = {"outlined"}
                     fullWidth
-                    margin = {"normal"}                     
+                    margin = {"normal"} 
+                    required
+                    type = {"email"}                    
                 />
 
                 <Textfield
@@ -37,21 +40,39 @@ const LoginPage = () => {
                     label = {"Senha"} 
                     variant = {"outlined"}   
                     fullWidth
-                    margin = {"normal"}                     
+                    margin = {"normal"}
+                    required
+                    type={"senha"}                     
                 />
 
                 <Button
                     fullWidth
                     variant = {"contained"}
                     color = {"primary"}
+                    margin = {"normal"}
                 >
-                    Fazer Login
+                    Login
+
                 </Button>
 
 
 
             </form>
         </InputContainer>
+
+            <SignUpButtonContainer>
+                   <Button
+                    type={"submit"}
+                    fullWidth
+                    variant = {"text"}
+                    color = {"primary"}
+
+                >
+                    Não possui conta? Cadastre-se
+
+                    </Button>
+
+            </SignUpButtonContainer>
 
         </ScreenContainer>
 
