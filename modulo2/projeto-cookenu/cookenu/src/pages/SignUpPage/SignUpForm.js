@@ -33,6 +33,7 @@ const SigUpForm = () => {
                     margin = {"normal"} 
                     required
                     
+                    
 
                 />
                 <Textfield
@@ -44,6 +45,7 @@ const SigUpForm = () => {
                     fullWidth
                     margin = {"normal"} 
                     required
+                    type = {"email"}
                                        
                 />
 
@@ -56,6 +58,7 @@ const SigUpForm = () => {
                     fullWidth
                     margin = {"normal"}
                     required
+                    type={"password"}
                                         
                 />
                  </InputContainer>
@@ -66,6 +69,7 @@ const SigUpForm = () => {
                     variant = {"contained"}
                     color = {"primary"}
                     margin = {"normal"}
+                    type={"submit"}
                 >
                     Fazer Cadastro
                 </Button>                  
