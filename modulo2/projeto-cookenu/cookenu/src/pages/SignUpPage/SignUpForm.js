@@ -1,20 +1,40 @@
 import React from 'react'
-import {InputContainer} from '../LoginPage/styled-components'
+import {InputContainer} from '../SignUpPage/styled-components'
 import useForm from '../../hooks/useForm'
 import Textfield from '@material-ui/core/TextField'
 import { Button } from '@material-ui/core'
+import { useHistory } from 'react-router-dom'
+import {SignUpFormContainer} from './styled-components'
 
-
-const LoginForm = () => {
+const SigUpForm = () => {
+    const history = useHistory ()
     const [form, onChange, clear] = useForm ({email:"", password:""})
 
     const onSubmitForm = (event) =>{
             event.preventDefault()
+            console.log(form)
     }
     
     return (
+
+        <form onSubmit={onSubmitForm}>
+         
+         <SignUpFormContainer>
+        
          <InputContainer>
-            <form onSubmit={onSubmitForm}>
+
+                <Textfield
+                    name = {"name"}
+                    value = {form.name}
+                    onChange = {onChange}
+                    label = {"Nome"} 
+                    variant = {"outlined"}
+                    fullWidth
+                    margin = {"normal"} 
+                    required
+                    
+
+                />
                 <Textfield
                     name = {"email"}
                     value = {form.email}
@@ -24,7 +44,7 @@ const LoginForm = () => {
                     fullWidth
                     margin = {"normal"} 
                     required
-                    type = {"email"}                    
+                                       
                 />
 
                 <Textfield
@@ -36,9 +56,10 @@ const LoginForm = () => {
                     fullWidth
                     margin = {"normal"}
                     required
-                    type={"senha"}                     
+                                        
                 />
-
+                 </InputContainer>
+                
                 <Button
                     
                     fullWidth
@@ -46,14 +67,12 @@ const LoginForm = () => {
                     color = {"primary"}
                     margin = {"normal"}
                 >
-                    Login
-
-                </Button>
+                    Fazer Cadastro
+                </Button>                  
+                </SignUpFormContainer>
             </form>
-        </InputContainer>
-
 )
 
 }
 
-export default LoginForm
+export default SigUpForm
