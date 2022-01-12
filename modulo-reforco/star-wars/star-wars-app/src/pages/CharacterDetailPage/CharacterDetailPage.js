@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default class CharacterDetailPage extends React.Component{
-    render(){
+const CharacterDetailPage = ()=> {
+    
         return <div>Detalhe</div>
     }
-}
+
+    export default CharacterDetailPage

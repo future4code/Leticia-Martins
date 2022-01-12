@@ -1,29 +1,27 @@
 import React from 'react'
+import {useState} from 'react'
 import axios from 'axios'
 import { BASE_URL } from '../../constants/urls'
-import { CharacterCard } from './styled'
+import {CharacterCard} from './styled'
 
-export default class CharacterListPage extends React.Component{
-    state = {
-        charactersList: []
-    }
-
-    componentDidMount(){
-        this.getCharacterList()
-    }
-    getCharacterList = () => {
+function CharacterListPage(){
+    const [characterList, setCharacterList] = useState([])
+        
+    function getCharacterList(){
         axios.get(`${BASE_URL}/people`)
-        .then((res) => this.setState({charactersList: res.data.results}))
-        .catch((err) => console.log (err.response))
+        .then((response) => setCharacterList(response.data.results))
+        .catch((error) => console.log ("Erro:", error.message))
+    }
+    function showCharacters(){
+        return characterList.map((character, index)=>{
+            return <CharacterCard key={index}>{character.name}</CharacterCard>
+        })
+    }
+          
+        return (<div>
+            <h1>Lista de Personagens</h1>
+            {showCharacters()}
+            </div>)
     }
 
-    render(){
-        const characters=this.state.charactersList.map((person)=>{
-            return <CharacterCard key= {person.url}>{person.name}</CharacterCard>
-    }
-        )
-
-        console.log (this.state.charactersList)
-        return <div>{characters}</div>
-    }
-}
+    export default CharacterListPage
