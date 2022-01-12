@@ -1,28 +1,25 @@
 import React from  'react'
+import { useState } from 'react'
 import CharacterDetailPage from './pages/CharacterDetailPage/CharacterDetailPage'
 import CharacterListPage from './pages/CharacterListPage/CharacterListPage'
 
 
-export default class App extends React.Component {
-  state = {
-    currentScreen: "list"
-  }
-      
-  selectPage = () =>{
-    switch (this.state.currentScreen) {
-      case "list":
-        return <CharacterListPage/>
-      case "detail":
-        return <CharacterDetailPage/>
-      default:
-        return <CharacterListPage/>
+const  App = () =>{
+  const [currentScreen, setCurrentScreen] = useState("list")
+         
+  function selectPage () {
+   if(currentScreen === "list") {
+     return <CharacterListPage/>
+   }else{
+      return <CharacterDetailPage/>
     }
   }
-   render(){ 
-     return(
+   
+  return(
     <div>  
-      {this.selectPage()}      
+      {selectPage()}      
     </div>
      )
-}
-}
+  }
+
+export default App
