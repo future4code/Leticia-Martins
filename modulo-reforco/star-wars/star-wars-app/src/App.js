@@ -1,23 +1,23 @@
 import React from  'react'
-import { useState } from 'react'
-import CharacterDetailPage from './pages/CharacterDetailPage/CharacterDetailPage'
-import CharacterListPage from './pages/CharacterListPage/CharacterListPage'
+import Router from './routes/Router'
+
 
 
 const  App = () =>{
-  const [currentScreen, setCurrentScreen] = useState("list")
+  // const currentScreen, setCurrentScreen = useState"list"
          
-  function selectPage () {
-   if(currentScreen === "list") {
-     return <CharacterListPage/>
-   }else{
-      return <CharacterDetailPage/>
-    }
-  }
+  // function selectPage 
+  //  ifcurrentScreen === "list" 
+  //    return <CharacterListPage/>
+  //  else
+  //     return <CharacterDetailPage/>
+  //   
+  // 
    
   return(
     <div>  
-      {selectPage()}      
+      {/* {selectPage()}       */}
+      <Router/>
     </div>
      )
   }
